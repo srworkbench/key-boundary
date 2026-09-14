@@ -1,0 +1,119 @@
+{
+  "reference_fields": [
+    "/body/tenant",
+    "/body/order",
+    "/body/item",
+    "/body/action",
+    "/body/revision"
+  ],
+  "policies": [
+    {
+      "name": "Order ID",
+      "fields": [
+        "/body/order"
+      ]
+    },
+    {
+      "name": "Delivery envelope",
+      "fields": [
+        "/body/delivery"
+      ]
+    },
+    {
+      "name": "Intended action",
+      "fields": [
+        "/body/tenant",
+        "/body/order",
+        "/body/item",
+        "/body/action",
+        "/body/revision"
+      ]
+    }
+  ],
+  "deliveries": [
+    {
+      "id": "first-item",
+      "at": 0,
+      "body": {
+        "tenant": "shop-alpha",
+        "order": "order-17",
+        "item": "line-a",
+        "action": "pack",
+        "revision": 1,
+        "delivery": "env-1"
+      }
+    },
+    {
+      "id": "second-item",
+      "at": 1,
+      "body": {
+        "tenant": "shop-alpha",
+        "order": "order-17",
+        "item": "line-b",
+        "action": "pack",
+        "revision": 1,
+        "delivery": "env-2"
+      }
+    },
+    {
+      "id": "retry-first",
+      "at": 2,
+      "body": {
+        "tenant": "shop-alpha",
+        "order": "order-17",
+        "item": "line-a",
+        "action": "pack",
+        "revision": 1,
+        "delivery": "env-3"
+      }
+    },
+    {
+      "id": "other-shop",
+      "at": 3,
+      "body": {
+        "tenant": "shop-beta",
+        "order": "order-17",
+        "item": "line-a",
+        "action": "pack",
+        "revision": 1,
+        "delivery": "env-4"
+      }
+    },
+    {
+      "id": "new-action",
+      "at": 4,
+      "body": {
+        "tenant": "shop-alpha",
+        "order": "order-17",
+        "item": "line-a",
+        "action": "cancel",
+        "revision": 1,
+        "delivery": "env-5"
+      }
+    },
+    {
+      "id": "new-revision",
+      "at": 5,
+      "body": {
+        "tenant": "shop-alpha",
+        "order": "order-17",
+        "item": "line-a",
+        "action": "pack",
+        "revision": 2,
+        "delivery": "env-6"
+      }
+    },
+    {
+      "id": "missing-item",
+      "at": 6,
+      "body": {
+        "tenant": "shop-alpha",
+        "order": "order-17",
+        "item": null,
+        "action": "pack",
+        "revision": 1,
+        "delivery": "env-7"
+      }
+    }
+  ]
+}
