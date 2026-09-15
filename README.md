@@ -6,11 +6,15 @@ Key Boundary compares candidate keys against **your declared action identity**. 
 
 ## See the difference
 
+![Computed witness pairs: the order key drops a different item, while the delivery key admits a retry.](docs/focus.png)
+
 ```sh
 python3 key_boundary.py examples/deliveries.json --out output/first-audit
 ```
 
-Open `output/first-audit/comparison.svg`. The included scenario produces:
+Open `output/first-audit/focus.svg` for the first wrong-drop and repeat-admission witnesses. The view selects actual disagreements from your audit. When none exists, it says so. It also distinguishes an expired key from a changed key. Long values are shortened in the visual; SVG titles and the JSON report retain full values.
+
+`comparison.svg` shows all deliveries and policies. The included scenario produces:
 
 | Key | First admissions | Wrong drops | Repeat admissions | Duplicates | Needs review |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -20,7 +24,7 @@ Open `output/first-audit/comparison.svg`. The included scenario produces:
 
 The second item, another tenant, a different action and a new revision must remain separate in this scenario. The retry must collapse. The missing item ID stays visibly unresolved.
 
-`audit.html` shows the selected identity fields beside each witness, highlighting differences. `audit.json` contains the exact row decisions, typed field values and witness IDs. All bundled inputs are invented, with no workplace records or external connections.
+`audit.html` is an optional static field table beside each witness, highlighting differences. Its output structure is checked automatically; its browser layout has not been visually verified. The verified demonstration centers on the CLI and native SVG reports. `audit.json` contains the exact row decisions, typed field values and witness IDs. All bundled inputs are invented, with no workplace records or external connections. The image above is rendered from the included input, not a hand-authored result.
 
 ## Define the action before choosing its key
 
@@ -52,4 +56,6 @@ Python 3.10 or later; no dependencies, credentials or services required. Output 
 python3 -m unittest discover -s tests -v
 ```
 
-Draft status: the engine and native report are implemented. A focused visual for the central failure, HTML rendering review and publication review remain in progress.
+The suite covers overlapping identities, tenant/action/revision boundaries, typed keys, expiry, missing identities, report witnesses and clean CLI output. The renderer uses only the standard library. The checked-in PNG is a rasterized copy of the generated SVG; generating a new audit does not require an image library.
+
+Licensed under [MIT](LICENSE).

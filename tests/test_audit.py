@@ -8,6 +8,7 @@ import unittest
 import xml.etree.ElementTree as ET
 from key_boundary import audit, InvalidInput, pointer, read_spec
 from report import render_svg, render_html
+from focus import render_focus, witnesses
 
 BASE = Path(__file__).resolve().parents[1] / 'examples/deliveries.json'
 
@@ -118,11 +119,34 @@ class AuditTests(unittest.TestCase):
             self.assertEqual(first.returncode,0,first.stderr)
             self.assertEqual(json.loads((out/'audit.json').read_text()),audit(self.spec))
             self.assertTrue((out/'comparison.svg').is_file())
+            self.assertEqual((out/'focus.svg').read_text(), render_focus(audit(self.spec)))
             self.assertTrue((out/'audit.html').is_file())
             before={p.name:p.read_bytes() for p in out.iterdir()}
             second=subprocess.run(command,capture_output=True,text=True)
             self.assertEqual(second.returncode,2)
             self.assertEqual(before,{p.name:p.read_bytes() for p in out.iterdir()})
+
+    def test_focus_tracks_changed_input_and_escapes_values(self):
+        self.spec['deliveries'][1]['body']['item'] = '<new>&item'
+        result = audit(self.spec)
+        self.assertEqual(witnesses(result)['false_merge'][2]['id'], 'second-item')
+        svg = render_focus(result)
+        ET.fromstring(svg)
+        self.assertIn('&lt;new&gt;&amp;item', svg)
+        self.assertIn('Different action. Same key. Suppressed.', svg)
+        self.assertIn('Same action. New key. Admitted again.', svg)
+
+    def test_focus_does_not_invent_failure_for_clean_policy(self):
+        self.spec['policies'] = [self.spec['policies'][2]]
+        svg = render_focus(audit(self.spec))
+        self.assertEqual(witnesses(audit(self.spec)), {})
+        self.assertEqual(svg.count('>No witness in this audit.</text>'), 2)
+
+    def test_focus_explains_expiry_without_claiming_key_changed(self):
+        self.spec['policies'] = [{'name': 'expiry', 'fields': self.spec['reference_fields'], 'window_seconds': 1}]
+        svg = render_focus(audit(self.spec))
+        self.assertIn('Same action. Key expired. Admitted again.', svg)
+        self.assertNotIn('Same action. New key. Admitted again.', svg)
 
 
 if __name__ == '__main__': unittest.main()

@@ -135,6 +135,8 @@ def main():
         args.out.mkdir(parents=True, exist_ok=False)
         (args.out / 'audit.json').write_text(json.dumps(result, indent=2) + '\n')
         from report import render_svg, render_html
+        from focus import render_focus
+        (args.out / 'focus.svg').write_text(render_focus(result))
         (args.out / 'comparison.svg').write_text(render_svg(result))
         (args.out / 'audit.html').write_text(render_html(result))
     except (InvalidInput, OSError, json.JSONDecodeError) as error:

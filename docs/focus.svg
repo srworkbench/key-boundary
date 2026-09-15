@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1150" viewBox="0 0 900 1150" role="img" aria-label="Key Boundary selected failure witnesses">
+<rect width="900" height="1150" fill="#faf6ed"/>
+<text x="42" y="48" font-family="sans-serif" font-size="24" font-weight="700" fill="#506276"><title>KEY BOUNDARY / SELECTED WITNESSES</title>KEY BOUNDARY / SELECTED WITNESSES</text>
+<text x="42" y="112" font-family="sans-serif" font-size="42" font-weight="700" fill="#202a36"><title>What does your key throw away?</title>What does your key throw away?</text>
+<text x="42" y="153" font-family="sans-serif" font-size="27" font-weight="400" fill="#202a36"><title>Compare decisions against your action identity.</title>Compare decisions against your action identity.</text>
+<rect x="28" y="192" width="844" height="406" rx="18" fill="#ffffff" stroke="#ae293c" stroke-width="2"/>
+<text x="50" y="235" font-family="sans-serif" font-size="25" font-weight="700" fill="#ae293c"><title>WRONG DROP</title>WRONG DROP</text>
+<text x="50" y="281" font-family="sans-serif" font-size="33" font-weight="700" fill="#202a36"><title>Order ID</title>Order ID</text>
+<text x="50" y="318" font-family="sans-serif" font-size="24" font-weight="400" fill="#202a36"><title>Earlier -&gt; later: first-item -&gt; second-item</title>Earlier -&gt; later: first-item -&gt; second-item</text>
+<text x="50" y="363" font-family="sans-serif" font-size="23" font-weight="400" fill="#506276"><title>ACTION FIELD: /body/item</title>ACTION FIELD: /body/item</text>
+<text x="50" y="404" font-family="sans-serif" font-size="32" font-weight="700" fill="#202a36"><title>&quot;line-a&quot;  -&gt;  &quot;line-b&quot;</title>&quot;line-a&quot;  -&gt;  &quot;line-b&quot;</text>
+<text x="50" y="443" font-family="sans-serif" font-size="23" font-weight="400" fill="#506276"><title>KEY FIELD: /body/order</title>KEY FIELD: /body/order</text>
+<text x="50" y="484" font-family="sans-serif" font-size="32" font-weight="700" fill="#202a36"><title>&quot;order-17&quot;  -&gt;  &quot;order-17&quot;</title>&quot;order-17&quot;  -&gt;  &quot;order-17&quot;</text>
+<text x="50" y="537" font-family="sans-serif" font-size="29" font-weight="700" fill="#ae293c"><title>Different action. Same key. Suppressed.</title>Different action. Same key. Suppressed.</text>
+<text x="50" y="573" font-family="sans-serif" font-size="22" font-weight="400" fill="#506276"><title>Selected fields shown; complete values in audit.json.</title>Selected fields shown; complete values in audit.json.</text>
+<rect x="28" y="624" width="844" height="406" rx="18" fill="#ffffff" stroke="#965409" stroke-width="2"/>
+<text x="50" y="667" font-family="sans-serif" font-size="25" font-weight="700" fill="#965409"><title>REPEAT ADMISSION</title>REPEAT ADMISSION</text>
+<text x="50" y="713" font-family="sans-serif" font-size="33" font-weight="700" fill="#202a36"><title>Delivery envelope</title>Delivery envelope</text>
+<text x="50" y="750" font-family="sans-serif" font-size="24" font-weight="400" fill="#202a36"><title>Earlier -&gt; later: first-item -&gt; retry-first</title>Earlier -&gt; later: first-item -&gt; retry-first</text>
+<text x="50" y="795" font-family="sans-serif" font-size="23" font-weight="400" fill="#506276"><title>ACTION FIELD: /body/item</title>ACTION FIELD: /body/item</text>
+<text x="50" y="836" font-family="sans-serif" font-size="32" font-weight="700" fill="#202a36"><title>&quot;line-a&quot;  -&gt;  &quot;line-a&quot;</title>&quot;line-a&quot;  -&gt;  &quot;line-a&quot;</text>
+<text x="50" y="875" font-family="sans-serif" font-size="23" font-weight="400" fill="#506276"><title>KEY FIELD: /body/delivery</title>KEY FIELD: /body/delivery</text>
+<text x="50" y="916" font-family="sans-serif" font-size="32" font-weight="700" fill="#202a36"><title>&quot;env-1&quot;  -&gt;  &quot;env-3&quot;</title>&quot;env-1&quot;  -&gt;  &quot;env-3&quot;</text>
+<text x="50" y="969" font-family="sans-serif" font-size="29" font-weight="700" fill="#965409"><title>Same action. New key. Admitted again.</title>Same action. New key. Admitted again.</text>
+<text x="50" y="1005" font-family="sans-serif" font-size="22" font-weight="400" fill="#506276"><title>Selected fields shown; complete values in audit.json.</title>Selected fields shown; complete values in audit.json.</text>
+<text x="42" y="1103" font-family="sans-serif" font-size="30" font-weight="700" fill="#202a36"><title>Inspect the witness before changing the rule.</title>Inspect the witness before changing the rule.</text>
+</svg>
