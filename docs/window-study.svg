@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1260" viewBox="0 0 1000 1260" role="img" aria-label="Retention-window study">
+<rect width="1000" height="1260" fill="#f9f5ed"/>
+<text x="36" y="45" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="700"><title>KEY BOUNDARY / RETENTION WINDOWS</title>KEY BOUNDARY / RETENTION WINDOWS</text>
+<text x="36" y="103" font-family="sans-serif" font-size="44" fill="#243243" font-weight="700"><title>How long should a key remember?</title>How long should a key remember?</text>
+<text x="36" y="146" font-family="sans-serif" font-size="28" fill="#243243" font-weight="400"><title>3 deliveries. 5 windows. Same action identity.</title>3 deliveries. 5 windows. Same action identity.</text>
+<text x="36" y="184" font-family="sans-serif" font-size="23" fill="#243243" font-weight="400"><title>Limits: 0 wrong drops / 0 repeats / 0 unresolved</title>Limits: 0 wrong drops / 0 repeats / 0 unresolved</text>
+<text x="36" y="242" font-family="sans-serif" font-size="34" fill="#243243" font-weight="700"><title>Order key</title>Order key</text>
+<text x="36" y="288" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Retention</title>Retention</text>
+<text x="274" y="288" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Wrong drops</title>Wrong drops</text>
+<text x="500" y="288" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Repeats</title>Repeats</text>
+<text x="667" y="288" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Unresolved</title>Unresolved</text>
+<text x="856" y="288" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Fits</title>Fits</text>
+<rect x="24" y="307" width="952" height="62" rx="9" fill="#f5e4df"/>
+<text x="36" y="348" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>5s</title>5s</text>
+<text x="325" y="348" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="534" y="348" font-family="sans-serif" font-size="32" fill="#9e283b" font-weight="700"><title>1</title>1</text>
+<text x="723" y="348" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="348" font-family="sans-serif" font-size="26" fill="#9e283b" font-weight="700"><title>NO</title>NO</text>
+<rect x="24" y="379" width="952" height="62" rx="9" fill="#dcefe5"/>
+<text x="36" y="420" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>6s</title>6s</text>
+<text x="325" y="420" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="534" y="420" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="723" y="420" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="420" font-family="sans-serif" font-size="26" fill="#255c46" font-weight="700"><title>YES</title>YES</text>
+<rect x="24" y="451" width="952" height="62" rx="9" fill="#dcefe5"/>
+<text x="36" y="492" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>10s</title>10s</text>
+<text x="325" y="492" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="534" y="492" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="723" y="492" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="492" font-family="sans-serif" font-size="26" fill="#255c46" font-weight="700"><title>YES</title>YES</text>
+<rect x="24" y="523" width="952" height="62" rx="9" fill="#f5e4df"/>
+<text x="36" y="564" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>11s</title>11s</text>
+<text x="325" y="564" font-family="sans-serif" font-size="32" fill="#9e283b" font-weight="700"><title>1</title>1</text>
+<text x="534" y="564" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="723" y="564" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="564" font-family="sans-serif" font-size="26" fill="#9e283b" font-weight="700"><title>NO</title>NO</text>
+<rect x="24" y="595" width="952" height="62" rx="9" fill="#f5e4df"/>
+<text x="36" y="636" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>Whole input</title>Whole input</text>
+<text x="325" y="636" font-family="sans-serif" font-size="32" fill="#9e283b" font-weight="700"><title>1</title>1</text>
+<text x="534" y="636" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="723" y="636" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="636" font-family="sans-serif" font-size="26" fill="#9e283b" font-weight="700"><title>NO</title>NO</text>
+<text x="36" y="752" font-family="sans-serif" font-size="34" fill="#243243" font-weight="700"><title>Order + item key</title>Order + item key</text>
+<text x="36" y="798" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Retention</title>Retention</text>
+<text x="274" y="798" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Wrong drops</title>Wrong drops</text>
+<text x="500" y="798" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Repeats</title>Repeats</text>
+<text x="667" y="798" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Unresolved</title>Unresolved</text>
+<text x="856" y="798" font-family="sans-serif" font-size="24" fill="#596b7d" font-weight="400"><title>Fits</title>Fits</text>
+<rect x="24" y="817" width="952" height="62" rx="9" fill="#f5e4df"/>
+<text x="36" y="858" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>5s</title>5s</text>
+<text x="325" y="858" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="534" y="858" font-family="sans-serif" font-size="32" fill="#9e283b" font-weight="700"><title>1</title>1</text>
+<text x="723" y="858" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="858" font-family="sans-serif" font-size="26" fill="#9e283b" font-weight="700"><title>NO</title>NO</text>
+<rect x="24" y="889" width="952" height="62" rx="9" fill="#dcefe5"/>
+<text x="36" y="930" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>6s</title>6s</text>
+<text x="325" y="930" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="534" y="930" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="723" y="930" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="930" font-family="sans-serif" font-size="26" fill="#255c46" font-weight="700"><title>YES</title>YES</text>
+<rect x="24" y="961" width="952" height="62" rx="9" fill="#dcefe5"/>
+<text x="36" y="1002" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>10s</title>10s</text>
+<text x="325" y="1002" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="534" y="1002" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="723" y="1002" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="1002" font-family="sans-serif" font-size="26" fill="#255c46" font-weight="700"><title>YES</title>YES</text>
+<rect x="24" y="1033" width="952" height="62" rx="9" fill="#dcefe5"/>
+<text x="36" y="1074" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>11s</title>11s</text>
+<text x="325" y="1074" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="534" y="1074" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="723" y="1074" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="1074" font-family="sans-serif" font-size="26" fill="#255c46" font-weight="700"><title>YES</title>YES</text>
+<rect x="24" y="1105" width="952" height="62" rx="9" fill="#dcefe5"/>
+<text x="36" y="1146" font-family="sans-serif" font-size="28" fill="#243243" font-weight="700"><title>Whole input</title>Whole input</text>
+<text x="325" y="1146" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="534" y="1146" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="723" y="1146" font-family="sans-serif" font-size="32" fill="#243243" font-weight="700"><title>0</title>0</text>
+<text x="865" y="1146" font-family="sans-serif" font-size="26" fill="#255c46" font-weight="700"><title>YES</title>YES</text>
+<text x="36" y="1239" font-family="sans-serif" font-size="23" fill="#243243" font-weight="400"><title>Fits applies to these deliveries. Full witnesses in JSON.</title>Fits applies to these deliveries. Full witnesses in JSON.</text>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "reference_fields": ["/body/order", "/body/item"],
+  "policies": [
+    {"name": "Order key", "fields": ["/body/order"]},
+    {"name": "Order + item key", "fields": ["/body/order", "/body/item"]}
+  ],
+  "deliveries": [
+    {"id": "first-item", "at": 0, "body": {"order": "order-17", "item": "line-a"}},
+    {"id": "retry-first", "at": 5, "body": {"order": "order-17", "item": "line-a"}},
+    {"id": "second-item", "at": 10, "body": {"order": "order-17", "item": "line-b"}}
+  ]
+}

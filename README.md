@@ -26,6 +26,24 @@ The second item, another tenant, a different action and a new revision must rema
 
 `audit.html` is an optional static field table beside each witness, highlighting differences. Its output structure is checked automatically; its browser layout has not been visually verified. The verified demonstration centers on the CLI and native SVG reports. `audit.json` contains the exact row decisions, typed field values and witness IDs. All bundled inputs are invented, with no workplace records or external connections. The image above is rendered from the included input, not a hand-authored result.
 
+## Compare retention windows
+
+![Computed retention-window comparison for an order key and an order-plus-item key.](docs/window-study.png)
+
+A longer retention window can fix a repeat admission and then suppress a different item. Compare the same sequence across explicit windows:
+
+```sh
+python3 window_study.py examples/window-tradeoff.json --windows 5,6,10,11,all --out output/window-study
+```
+
+This sequence has an item at 0 seconds, its retry at 5 seconds, and a different item from the same order at 10 seconds. The order-only key admits the retry with a 5-second window. At 6 and 10 seconds, it makes neither error. At 11 seconds, it wrongly drops the second item. Adding the item to the key prevents that collision, but a 5-second window still admits the retry.
+
+Open `window-study.svg` to compare wrong drops, repeat admissions and unresolved identities. `window-study.json` includes every decision and its witness, plus `changes_from_previous` for each adjacent pair of supplied windows. A witness change is retained even when the status stays the same. Each evaluation starts with an empty cache; windows never share state.
+
+`all` retains keys for the entire input. Windows are sorted and must be distinct positive seconds. The default **Fits** criterion allows zero wrong drops, zero repeat admissions and zero unresolved rows. Explicit `--max-wrong-drops`, `--max-repeat-admits` and `--max-unresolved` options change those thresholds without hiding the counts. Fits describes only the supplied sequence and declared identity; it does not select a safe production timeout. Results need not improve as windows grow.
+
+A study permits up to 32 windows and 128 policy/window combinations. It retains full witnesses for each evaluation, so memory and output size grow with the number of combinations and deliveries. This favors inspectable comparisons over large-stream throughput.
+
 ## Define the action before choosing its key
 
 `reference_fields` is a list of JSON Pointers that defines when two deliveries represent the same intended action. It is an explicit assumption, not inferred ground truth. Include an operation, tenant, revision or source event ID when your actual workflow requires it. Object plus event type is not universally sufficient for repeatable operations.
